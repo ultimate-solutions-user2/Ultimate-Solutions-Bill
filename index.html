@@ -1,0 +1,279 @@
+<!--
+	  _    _ _ _   _                 _          _____       _       _   _               ______                  _   
+	 | |  | | | | (_)               | |        / ____|     | |     | | (_)             |  ____|                | |  
+	 | |  | | | |_ _ _ __ ___   __ _| |_ ___  | (___   ___ | |_   _| |_ _  ___  _ __   | |__   __ _ _   _ _ __ | |_ 
+	 | |  | | | __| | '_ ` _ \ / _` | __/ _ \  \___ \ / _ \| | | | | __| |/ _ \| '_ \  |  __| / _` | | | | '_ \| __|
+	 | |__| | | |_| | | | | | | (_| | ||  __/  ____) | (_) | | |_| | |_| | (_) | | | | | |___| (_| | |_| | |_) | |_ 
+	  \____/|_|\__|_|_| |_| |_|\__,_|\__\___| |_____/ \___/|_|\__,_|\__|_|\___/|_| |_| |______\__, |\__, | .__/ \__|
+	                                                                                           __/ | __/ | |        
+	                                                                                          |___/ |___/|_|        
+																																																					
+	International leader in Enterprise Resource Solutions and Software Development.
+
+	If you're the kind of person who reads source code, you should visit our site for more awesome things.:
+  https://ultimate-eg.ne
+
+	--------------------------------------------------------------------------------------------
+	  _    _ _ _   _                 _         ____  _ _ _ 
+	 | |  | | | | (_)               | |       |  _ \(_) | |
+	 | |  | | | |_ _ _ __ ___   __ _| |_ ___  | |_) |_| | |
+	 | |  | | | __| | '_ ` _ \ / _` | __/ _ \ |  _ <| | | |
+	 | |__| | | |_| | | | | | | (_| | ||  __/ | |_) | | | |
+	  \____/|_|\__|_|_| |_| |_|\__,_|\__\___| |____/|_|_|_|
+
+	--------------------------------------------------------------------------------------------                                                                                
+-->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Required meta tags -->
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Title -->
+		<title>Ultimate Schools System</title>
+
+		<!-- Custom Style -->
+		<style>
+			/* Fonts */
+			@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+			body {
+				font-family: 'Cairo', sans-serif;
+				margin: 0;
+				background-color: #f5f7f9;
+			}
+			.d-flex {
+				display: flex !important;
+			}
+			.bold {
+				font-weight: bold;
+			}
+			.billHeader,
+			.billContent .billDetails .billTableFooter {
+				padding: 30px;
+				background-color: #e5eef4;
+			}
+			.billHeader .brandLogo > *,
+			.billFooter .brandLogo > * {
+				max-width: 100%;
+			}
+			.billHeader .brandLogo,
+			.billContent .billClient > .name,
+			.billFooter .brandLogo {
+				width: 340px;
+				margin-left: 40px;
+				font-size: 20px;
+				font-weight: bold;
+			}
+			.billHeader .brandInfo {
+				font-size: 20px;
+				font-weight: 600;
+				margin-left: auto;
+			}
+			.billHeader .qrcode {
+				font-size: 20px;
+				color: #ffffff;
+				padding: 10px;
+				background-color: #2b2b2b;
+				border-radius: 10px;
+				text-transform: uppercase;
+				margin-right: 40px;
+				text-align: center;
+			}
+			.billHeader .qrcode img {
+				width: 130px;
+				height: 130px;
+				border-radius: 10px;
+				margin-bottom: 5px;
+			}
+			.billHeader .billTitle {
+				font-size: 32px;
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+			.billHeader .billInfo {
+				font-size: 16px;
+				font-weight: 700;
+				color: #333333;
+			}
+			.billHeader .billInfo > *:not(:last-child) {
+				margin-left: 10px;
+				padding-left: 10px;
+				border-left: 1px solid #c9c9c9;
+			}
+			.billContent {
+				padding: 30px;
+			}
+			.billContent > *:not(:last-child) {
+				margin-bottom: 40px;
+			}
+			.billContent .info {
+				font-size: 16px;
+			}
+			.billContent .info > *:not(:last-child) {
+				margin-bottom: 10px;
+			}
+			.billContent .billDetails {
+				background-color: #ffffff;
+				filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.05))
+					drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+			}
+			.billContent .billDetails .billTableTitle,
+			.billContent .billDetails .billTableFooter {
+				font-size: 16px;
+				font-weight: 600;
+				padding: 10px 20px;
+				background-color: #e5eef4;
+			}
+			.billContent .billDetails .billTableSubTitle {
+				font-size: 16px;
+				font-weight: 600;
+				padding: 10px 20px 0;
+			}
+			.billContent .billDetails .billTable {
+				width: 100%;
+				font-size: 16px;
+				padding: 10px 20px;
+				border-spacing: 0 10px;
+			}
+			.billContent .billDetails .billTable > * {
+				text-align: right;
+			}
+			.billContent .billDetails .billTableFooter {
+				font-weight: bold;
+				font-size: 24px;
+				padding: 20px;
+			}
+			.billContent .billFooter {
+				padding-top: 20px;
+				border-top: 1px solid #aaaaaa;
+			}
+			.billContent .billFooter .brandInfo {
+				text-align: left;
+				margin-right: auto;
+				font-weight: 500;
+				font-size: 20px;
+				color: #22447b;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bill">
+			<!-- Bill Header -->
+			<div class="billHeader">
+				<!-- Brand Data -->
+				<div class="d-flex mb-4">
+					<!-- Brand Logo -->
+					<div class="brandLogo">
+						<img src="./dist/images/logo.png" alt="Logo" />
+					</div>
+
+					<!-- Brand Info. -->
+					<div class="brandInfo">
+						<div class="name">شركة حلول</div>
+						<div class="phone">تليفون/ 4115121541</div>
+						<div class="fax">فاكس/ 4115121541</div>
+						<div class="email">contact@holol.com</div>
+						<div class="address">
+							غرب سوميد - المجاورة الاولى - شارع 18 - فيلا 2
+						</div>
+					</div>
+
+					<!-- QRCode -->
+					<div class="qrcode">
+						<img src="./dist/images/QRCode.png" alt="QR Code" />
+						<div>Scan me</div>
+					</div>
+				</div>
+
+				<!-- Bill Title -->
+				<div class="billTitle">طلب رقم #122154</div>
+				<div class="billInfo d-flex">
+					<div class="billDate">14 اكتوبر 2022</div>
+					<div class="billStatus">بانتظار الدفع</div>
+				</div>
+			</div>
+
+			<!-- Bill Content -->
+			<div class="billContent">
+				<!-- Bill Client -->
+				<div class="billClient d-flex">
+					<div class="name">العميل</div>
+					<div class="info">
+						<div>
+							<div class="name">ماجد سيف النصر</div>
+							<div class="company">شركة حلول</div>
+							<div class="email">majedsiefalnasr@outlook.com</div>
+							<div class="phone">01142293292</div>
+						</div>
+
+						<div class="bold">
+							<div class="address">مصر الجديدة, القاهرة, مصر</div>
+							<div class="post">رقم بريد: 122154</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Bill Details -->
+				<div class="billDetails">
+					<div class="billTableTitle">تفاصيل الفاتورة</div>
+					<div class="billTableSubTitle">الرسوم الدراسية</div>
+					<table class="billTable">
+						<thead>
+							<tr>
+								<th style="width: 80%">البيان</th>
+								<th>الرسوم</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>البيان</td>
+								<td>500 ر.س</td>
+							</tr>
+							<tr>
+								<td>البيان</td>
+								<td>500 ر.س</td>
+							</tr>
+							<tr>
+								<td>البيان</td>
+								<td>500 ر.س</td>
+							</tr>
+							<tr>
+								<td>البيان</td>
+								<td>500 ر.س</td>
+							</tr>
+							<tr>
+								<td>البيان</td>
+								<td>500 ر.س</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="d-flex billTableFooter">
+						<div style="width: 80%">اجمالى الرسوم الدراسية</div>
+						<div>215522 ر.س</div>
+					</div>
+				</div>
+
+				<!-- Bill Footer -->
+				<div class="billFooter d-flex">
+					<!-- Brand Logo -->
+					<div class="brandLogo">
+						<img src="./dist/images/logo.png" alt="Logo" />
+					</div>
+
+					<!-- Brand Info. -->
+					<div class="brandInfo">
+						<div class="name">https://www.holol.com/</div>
+						<div class="phone">contact@holol.com</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
